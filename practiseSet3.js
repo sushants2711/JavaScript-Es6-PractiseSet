@@ -10,6 +10,20 @@ const firstLast = (arr) => `the length of an fruits array is ${fruitsarr.length}
 //    argument and returns a string that includes the product name, price,
 //    and a message based on whether it is in stock or not.
 
+const shopdetails = {
+    name: "apple",
+    price: "120 kg",
+    stock: true
+}
+const shopdetails2 = {
+    name: "apple",
+    price: "120 kg",
+    stock: false
+}
+
+const isavailable = (product) => product.stock === true ? "available" : "not availlable"
+console.log(isavailable(shopdetails))
+console.log(isavailable(shopdetails2))
 
 // 3. Write a function findPerson that takes an array of person objects and a name as parameters and returns the object with the matching name, or null if not found.
 const user =[
@@ -26,10 +40,10 @@ const user =[
     age: 25
 }
 ]
-// wrong code 
-const findPerson = (person, name) => person.name.toLowerCase() === name.toLowerCase() ?? person.name ; "not match the name"
-console.log(findPerson(user, "Jack"))
-console.log(findPerson(user, "sushant"))
+
+const findPerson = (person, name) => person.some((a) => a.name.toLowerCase() === name.toLowerCase())
+// console.log(findPerson(user, "Jack"))
+// console.log(findPerson(user, "sushant"))
 
 
 
@@ -48,8 +62,8 @@ const startsWithA = (str) => str.charAt(0) === "A" ? `Found` : "Not-Found";
 // 6. Write an ES6 function to return only the first character of the given array.
 
 const firstElem = ["orange", "apple", "mango", "guava"];
-const returnfirstChar = (firstElem) => firstElem.charAt(0)
-console.log(returnfirstChar(firstElem))
+// const returnfirstChar = (firstElem) => firstElem.charAt(0)
+// console.log(returnfirstChar(firstElem))
 
 // 7. Write a function to return the last 5 characters as an array from the given array.
 
