@@ -166,23 +166,22 @@ const convertSimpleArray = (arr) => arr.flat(Infinity).sort((a, b) => a-b)
 
 //  12. Write a function that takes an array of strings, checks for duplicate strings, and returns a new array that contains only unique strings (without using `Set`).
 
-const allStr = ["sushant", "mango", "lion", "Lion", "sushant", "mango", "lapy", "lapy", "Lapy"];
+const allStr = ["sushant","sushant","sushant", "mango", "lion", "Lion", "Lion", "sushant", "mango", "lapy", "lapy", "Lapy"];
 
-// const checkDuplicate = (str) => {
-//     let count = 0;
-//     let newArr = [];
-//     for(let i=0; i<str.length-1; i++) {
-//         for(let k=i+1; k<str.length; k++) {
-//             if(str[i] === str[k]) {
-//                 count = count+1;
-//                 console.log(count);
-//             }
-//         }
-//         if(count === 0 || count===1){ 
-//             newArr.push(str[i]);
-//             count = 0;
-//         }
-//     }
-//     return newArr;
-// }
-//! console.log(checkDuplicate(allStr))
+const checkDuplicate = (str) => {
+    let newArr = [];
+    for(let i=0; i<str.length; i++) {
+        let isduplicate = false;
+        for(let k=i+1; k<str.length; k++) {
+            if(str[i] === str[k]) {
+                isduplicate = true;
+                break;
+            }
+        }
+        if (!isduplicate) {
+            newArr.push(str[i]); 
+        }
+    }
+    return newArr;
+}
+console.log(checkDuplicate(allStr))
