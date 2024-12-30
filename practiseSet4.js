@@ -30,7 +30,7 @@ const arr = [1, 3, 4, 5, 10, 34];
 
 
 const sumOfArray = (arrNumbers) => {
-    const sum = arr.reduce((acc, curr) => {
+    const sum = arrNumbers.reduce((acc, curr) => {
         return acc + curr;
     }, 0)
 
