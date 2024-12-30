@@ -30,7 +30,7 @@ SET:-1 (MID - LEVEL)
  the original array by its index. Use the `map` method.
 
  2. Write a function that takes an array of objects with properties `name` 
- and `price` and returns a new array of names sorted by price in ascending order.
+ and `price` and returns a new array of names sorted by price in ascending order.   
 
  3. Write a function that takes an array of strings and returns a new array
  where each string is reversed. Use the `map` method.
