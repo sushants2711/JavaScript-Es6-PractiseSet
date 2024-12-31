@@ -41,17 +41,21 @@ SET:-1 (MID - LEVEL)
  5. Write a function that takes an array of objects with properties `name`,
  `age`, and `city`. Return the object with the highest age from the array.
 
+
+--------------------NOT SOLVE-------------------
  6. Write a function that takes a string and returns a new string where 
  each character is shifted by `n` positions in the alphabet. If `n` is negative,
- the shift should be reversed. Handle both uppercase and lowercase letters.
-
+ the shift should be reversed. Handle both uppercase and lowercase letters.       
+-----------------------------------------------------------------
 
  7. Write a function that takes an array of numbers and returns an object 
  containing the sum, average, maximum, and minimum of the numbers in the array.
 
+-----------------------------NOT SOLVE------------------
  8. Write a function that accepts an array of strings, where each string 
  represents a number in words (e.g., "one", "three", "seven"). The function 
  should return the sum of these numbers.
+------------------------------------------------------------
 
  9. Write a function that takes an array of objects with properties `name` 
  and `score`. Return a new array of the top 3 highest-scoring students.
@@ -66,7 +70,7 @@ SET:-1 (MID - LEVEL)
  represents a collection of numbers. Return a flattened array containing 
  all the numbers in the sub-arrays, sorted in ascending order.
 
-
+--------------------some issue chatGPT help --------------------------
  12. Write a function that takes an array of strings, checks for duplicate 
  strings, and returns a new array that contains only unique strings (without using `Set`).
 
@@ -74,6 +78,8 @@ SET:-1 (ADVANCED)
 
  1. Write a function that takes an array of objects with properties `start` and `end` (representing time intervals).
     The function should return an array of intervals that are merged if they overlap.
+
+    
  2. Write a function that takes a deeply nested object and a string representing a path (e.g., "user.address.city"). 
     The function should return the value located at that path, or `undefined` if the path does not exist.
 
