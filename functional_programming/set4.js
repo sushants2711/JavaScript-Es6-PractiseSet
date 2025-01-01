@@ -226,21 +226,111 @@ const games = [
 
 //? 9. Write an ES6 function that takes an array of objects containing car information (make, model, year) and returns an array with only the car model that were made after the year 2012.
 
+const cars3 = [
+    {
+        make: "Hundai",
+        model: "bs6 engine",
+        year: 2010
+    },
+    {
+        make: "Toyota",
+        model: "Corolla",
+        year: 2012
+    },
+    {
+        make: "Honda",
+        model: "Civic",
+        year: 2012
+    },
+    {
+        make: "Toyota",
+        model: "Camry",
+        year: 2015
+    },
+    {
+        make: "Ford",
+        model: "Mustang",
+        year: 2018
+    },
+]
 
+const after2012s = (carObj) => carObj.filter((curr) => curr.year>2012)
+//! console.log(after2012(cars2))
 
 //? 10. Write an ES6 function that takes an array of objects representing books with properties title, author and pageCount. Return the all book titles that have more than 700 pages.
 
+const books2 = [
+    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", pageCount: 180 },
+    { title: "To Kill a Mockingbird", author: "Harper Lee", pageCount: 710 },
+    { title: "1984", author: "George Orwell", pageCount: 800 },
+    { title: "Moby Dick", author: "Herman Melville", pageCount: 635 },
+    { title: "Pride and Prejudice", author: "Jane Austen", pageCount: 700 },
+];
+
+const allBookGreaterthan700Pages = (book, pages) => book.filter((a)=> a.pageCount> pages)
+//! console.log(allBookGreaterthan700Pages(books2, 700))
 
 //? 11. Write an ES6 function that takes an array of numbers and returns the sum of all the even numbers in the array using the reduce function.
+const arr = [2,5,7,8,90,2,4,44,1,51,60];
 
+const findSumOfEvenNum = (sum)=> sum.reduce((acc, curr) => (curr % 2 === 0 ? acc+curr : acc),0)
+
+// const findSumOfEvenNum = (sum) => {
+//     let val =0;
+//     for(let key of sum){
+//         if(key % 2 === 0){
+//             val=val+key
+//         }
+//     }
+//     return val
+// }
+
+//! console.log(findSumOfEvenNum(arr));
 
 //? 12. Write an ES6 function that takes an array of objects representing students with properties name and score, and returns the average score of all the students using the reduce function.
+const cricketScore = [
+    {
+        name: "Sushnat",
+        score: 100
+    },
+    {
+        name: "Roshtan",
+        score: 79
+    },
+    {
+        name: "Bob",
+        score: 99
+    }, {
+        name: "Oggy",
+        score: 88
+    },
+    {
+        name: "Jonthy",
+        score: 93
+    }
+];
+
+const averageFunction = (avgis) => avgis.reduce((acc, curr) => acc+curr.score/avgis.length, 0)
+//! console.log(averageFunction(cricketScore))
 
 //? 13. Write an ES6 function that takes an array of objects representing products with properties name, price, and quantity, and returns the total cost of all the products using the reduce function.
-
+ const products3 = [
+   { name: 'Shirt', price: 20, quantity: 2 },
+   { name: 'Pants', price: 30, quantity: 1 },
+   { name: 'Shoes', price: 50, quantity: 1 },
+   { name: 'Hat', price: 10, quantity: 3 },
+ ];
+const totalPrice = (pro) => pro.reduce((acc, curr) => acc+(curr.price * curr.quantity),0)
+//! console.log(totalPrice(products3))
 
 //? 14. Write an ES6 function that takes an array of strings and returns a single string that is the concatenation of all the strings using the reduce function const strings = ['Hello', ' ', 'world', '!'];
 
+const strings = ['Hello', ' ', 'world', '!'];
+const concatAllStr = (str) => str.reduce((acc, curr) => acc+curr, '')
+//! console.log(concatAllStr(strings))
 
 //? 15. Write an ES6 function that takes an array of numbers and returns the minimum number using the reduce function. const numbers = [10, 5, 8, 3, 6];
 
+const numbers = [10, 5, 8, 3, 6];
+const minNumber = (num) => num.reduce((acc, curr) => curr<acc ? curr:acc)
+//! console.log(minNumber(numbers))
