@@ -1,0 +1,40 @@
+Set :- 1
+1.	Write a function to calculate the sum of n elements.
+2.	Write a function that takes an array of "n" numbers as an argument and returns an object containing the maximum number, minimum number, and the average of all numbers in the array.
+3.	Given an array of numbers, write a function that returns the sum of all the even numbers.
+4.	Given an array of numbers, write a function that returns the difference between the largest and smallest numbers.
+5.	Given an array of objects representing people, where each object has a name property and an age property, write a function that returns the name of the oldest person.
+6.	Write a function that calculates the product of all numbers in an array.
+7.	Write a function that checks whether a given number is a prime number.
+8.	Write a function that returns the largest even number in an array.
+9.	Write a function that takes an array of numbers and returns an array with each number squared.
+10.	Write a function that removes duplicates from an array of numbers.
+11.	Write a function that checks if a given string is a palindrome (reads the same forwards and backwards).
+12.	Write a function that takes an array of numbers and returns the index of the first occurrence of the maximum number.
+13.	Write a function that takes an array of numbers and returns an array with the numbers in reverse order.
+14.	Write a function that calculates the factorial of a given number.
+15.	Write a function that returns the second largest number in an array of numbers.
+Set:- 2
+1.	Given an array, write an ES6 function that returns the total length of all the strings in an array.
+2.	Write an ES6 function sumSquares that takes an array of numbers and returns the sum of the squares of all the numbers in the array.
+3.	Write an ES6 function that calculates and returns the total value of all items in an array of objects.
+4.	Write an ES6 function that takes an array of strings as input and concatenates them into a single string.
+5.	Write an ES6 function to multiply and return all the elements of a given array.
+6.	Write an ES6 function that takes an array of strings and returns the longest string.
+7.	Write an ES6 function that takes an array of objects with name and age properties, and returns the name of the oldest person.
+8.	Write an ES6 function that takes an array of objects representing people with name and age properties, and returns an object with the average age of all the people.
+9.	Write an ES6 function that takes an array of objects representing products with name, price, and quantity properties, and returns an object with the most expensive product.
+10.	Write an ES6 function that takes an array of strings and returns an object with the count of each string.
+
+Set3:- 
+1.	Write an ES6 function that takes an array of numbers and returns the highest even number.
+2.	Write an ES6 function that takes an array of strings and returns an array with only the strings that start with a vowel.
+3.	Write an ES6 function that takes an array of numbers and returns the sum of all odd numbers in the array.
+4.	Write an ES6 function that takes an array of objects and returns the object with the lowest price.
+5.	Write an ES6 function that takes an array of strings and returns an array with the strings sorted by length in ascending order.
+6.	Write an ES6 function that takes an array of objects with name and age properties, and returns the object with the youngest person.
+7.	Write an ES6 function that takes an array of numbers and returns an array with each number cubed.
+8.	Write an ES6 function that takes an array of numbers and returns the difference between the largest and smallest numbers.
+9.	Write an ES6 function that takes an array of strings and returns an object where the keys are the strings and the values are the lengths of the strings.
+10.	Write an ES6 function that takes an array of numbers and returns the number of even numbers in the array.
+
