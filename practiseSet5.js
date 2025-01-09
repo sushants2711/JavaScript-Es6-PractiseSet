@@ -2,8 +2,8 @@
 //? 1.	Given an array, write an ES6 function that returns the total length of all the strings in an array.
 
 const arrSt = ["sushant", "kumar","singh"];
-const totalLengthOfStr = (str) => str.join('').length;
-//! console.log(totalLengthOfStr(arrSt))
+const totalLengthOfStr = (str) => str.join('');
+//  console.log(totalLengthOfStr(arrSt))
 
 const totalLength = (num) => num.reduce((acc, curr) => acc+curr.length,0)
 //! console.log(totalLength(arrSt))
@@ -123,3 +123,12 @@ const countOfEachStr = (str) => {
   // not solve
 }
 //! console.log(countOfEachStr(strings))
+
+
+//? Write a string name="appleiscoming" you can cretae a function and changes into a array || convert the string to an array
+const nameis="appleiscoming"
+const changeStringToArray = (str) => {
+    const result = str.split('');
+    console.log(result)
+}
+// changeStringToArray(nameis)
